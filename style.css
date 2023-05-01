@@ -15,7 +15,13 @@ body{
     border-radius: 50%;
     width: 250px;
     height: 250px;
+    transition: transform 0.3s ease-in-out;
 }
+
+.clock:hover{
+    transform: scale(1.1);
+}
+
 
 .hands{
     position: relative;

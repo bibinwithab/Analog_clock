@@ -17,5 +17,16 @@
         </div>
     </div>
     <script src="clock.js"></script>
+    <script>
+        const clock1 = document.querySelector('.clock');
+
+        clock1.addEventListener('mouseover', () => {
+          clock1.classList.add('hover');
+        });
+        
+        clock1.addEventListener('mouseout', () => {
+          clock1.classList.remove('hover');
+        });
+    </script>
 </body>
 </html>
