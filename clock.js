@@ -1,6 +1,19 @@
 var inc = 1000;
 
 clock();
+hover();
+
+function hover(){
+  const clock1 = document.querySelector('.clock');
+
+  clock1.addEventListener('mouseover', () => {
+    clock1.classList.add('hover');
+  });
+  
+  clock1.addEventListener('mouseout', () => {
+    clock1.classList.remove('hover');
+  });
+}
 
 function clock() {
   const date = new Date();
